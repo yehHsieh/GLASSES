@@ -1,0 +1,493 @@
+@import 'reset';
+@import 'various';
+@import 'grid';
+@import 'mixin';
+
+// *{
+// 	outline: 1px solid black;
+// }
+
+
+.header{
+	background: $main-color;
+	padding: 25px 0;
+  position: relative;
+  .headerContent{
+    // max-width: 90%;
+    // padding: 0 12px;
+    // margin: 0 auto;
+    @include content-style;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    h1>a{
+      background: url(../images/week3-4/logo-white.png);
+      width: 80px;
+      height: 48.6px;
+      background-size: cover;
+      text-indent: 101%;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .nav{
+      display: flex;
+      justify-content: space-between;
+      width: 492px;
+      text-align: center;
+      @include iphone{
+        display: none;
+      }
+      >li{
+        width: 20%;
+      }
+      a{
+        color: #fff;
+        font: normal normal normal 20px/30px Source Han Sans TW;
+        padding: 5%;
+      }
+    }
+  }
+}
+
+
+.hamburger{
+  display: none;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  font-size: 40px;
+  color:#fff;
+  @include iphone{
+    display: block;
+  }
+}
+.dropMenu{
+  max-height: 0;
+  overflow: hidden;
+  background: $main-color;
+  opacity:0.8;
+  text-align: center;
+  position: absolute;
+  top: 98px;
+  left: 0;
+  right: 0;
+  transition: max-height 2s;
+  a{
+    padding: 3% 0;
+    color:#fff;
+    font: normal normal normal 20px/30px Source Han Sans TW;
+    &:hover{
+      background: $primary-color;
+    }
+  }
+}
+.active{
+  max-height: 700px;
+}
+
+
+
+.banner{
+  height: 787px;
+  background: url(../images/week3-4/home-header.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  @include iphone{
+    background: url(../images/week3-4/home-header-sm.png) no-repeat;
+    background-size: cover;
+  }
+  .bannerContent{
+    max-width: 600px;
+    // margin-right: 20%;
+    padding: 0 12px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    @include ipad{
+      width: 100%;
+      // margin: 0 auto;
+      padding: 0;
+      margin-right: 37px;
+    }
+    @include iphone{
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 12px;
+    }
+    h2{
+      font: normal normal normal 36px/54px Source Han Sans TW;
+      color: $primary-color;
+      @include iphone{
+        font: normal normal normal 16px/24px Source Han Sans TW;
+      }
+      span{
+        font: normal normal bold 64px/96px Source Han Sans TW;
+        margin-bottom: 14px;
+        @include iphone{
+          font-size: 24px;
+          line-height: 36px;
+        }
+      }
+    }
+    a{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: 20%;
+      height: 41px;
+      font: normal normal 400 20px/30px Source Han Sans TW;
+      color:#fff;
+      background: $main-color;
+      @include iphone{
+        width: 30%;
+      }
+    }
+  }
+}
+.special, .series, .coordinate, .customer{
+  text-align: center;
+  background-color: #FBF2F2;
+  padding: 80px 0;
+  color:$primary-color;
+  @include iphone{
+    padding: 40px 0;
+  }
+  h3{
+    font: normal normal bold 48px/72px Source Han Sans TW;
+    margin-bottom: 32px;
+    @include iphone{
+      font: normal normal bold 24px/36px Source Han Sans TW;
+    }
+  }
+  .specialContent, .customerContent{
+    @include content-style;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .list{
+      width: 24%;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      @include ipad{
+        width: 23%;
+      }
+      @include iphone{
+        width: 100%;
+        margin-bottom: 3%;
+      }
+      .specialImg{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 24px;
+      }
+      h4{
+        font: normal normal bold 24px/36px Source Han Sans TW;
+        margin-bottom: 8px;
+      }
+      p{
+        width: 100%;
+        font: normal normal normal 16px/24px Source Han Sans TW;
+        color:#000;
+        text-align: left;
+      }
+    }
+  }
+}
+.series{
+  background-color: #fff;
+  h3{
+    margin-bottom: 48px;
+  }
+  .seriesContent{
+    @include content-style;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include ipad{
+      width: 50%;
+    }
+    @include ipad{
+      width: 100%;
+    }
+    li{
+      width: 32%;
+      text-align: center;
+      @include ipad{
+        width: 100%;
+        margin-bottom: 3%;
+      }
+      @include iphone{
+        width: 100%;
+        margin-bottom: 3%;
+      }
+    }
+    p{
+      font: italic normal 900 48px/72px Roboto;
+      color:$main-color;
+    }
+  }
+}
+.coordinate{
+  background-image: url(../images/week3-4/index-bg.png);
+  @include ipad{
+    background: url(../images/week3-4/index-bg-md.png) no-repeat;
+    background-size: cover;
+  }
+  @include iphone{
+    background: url(../images/week3-4/index-bg-sm.png);
+    padding-bottom: 40px;
+    background-size: cover;
+  }
+  h3{
+    color:#fff;
+  }
+  .coordinateContent{
+    @include content-style;
+    display: flex;
+    flex-wrap: wrap;
+    li{
+      width: 50%;
+      @include ipad{
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      @include iphone{
+        width: 100%;
+      }
+    }
+    p{
+      font: italic normal 900 48px/72px Roboto;
+      color:$main-color;
+      background: #fff;
+    }
+  }
+}
+.customer{
+  background: #fff;
+  .customerContent{
+    .list{
+      width: 23%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // align-items: flex-start;
+      text-align: left;
+      box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.3);
+      @include ipad{
+        width: 47%;
+        margin-bottom: 3%;
+      }
+      @include iphone{
+        width: 100%;
+        margin-bottom: 3%;
+        align-items: center;
+      }
+      h4{
+        width: 100%;
+        font: normal normal 400 16px/24px Source Han Sans TW;
+        color:#000;
+        margin-bottom: 8px;
+      }
+      p:nth-child(3n){
+        margin-bottom: 72px;
+      }
+      h4, p{
+        padding:2%;
+      }
+    }
+  }
+  
+}
+.contact{
+  text-align: center;
+  background-color: #FBF2F2;
+  padding: 80px 0;
+  @include iphone{
+    padding: 40px 0;
+  }
+  .contactContent{
+    width: 47%;
+    margin: 0 auto;
+    padding: 0 12px;
+    @include ipad{
+      width: 70%;
+    }
+    @include iphone{
+      width: 100%;
+    }
+    h3{
+      font: normal normal bold 48px/72px Source Han Sans TW;
+      margin-bottom: 48px;
+      color:$primary-color;
+    }
+    p, form{
+      font: normal normal normal 20px/30px Source Han Sans TW;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+    form{
+      label{
+        display: block;
+        margin-bottom: 8px;
+      }
+      >input{
+        width: 100%;
+        height: 36px;
+        margin-bottom: 16px;
+      }
+      input{
+        background-color:#FBF2F2;
+      }
+      textarea{
+        background-color:#FBF2F2;
+        width: 100%;
+        height: 136px;
+        margin-bottom: 16px;
+      }
+      .agree{
+        font: normal normal normal 16px/24px Source Han Sans TW;
+        margin-bottom: 48px;
+      }
+      .send{
+        input{
+          width: 70%;
+          margin: 0 auto;
+          display: block;
+          padding: 16px 17px;
+          text-align: center;
+          font: normal normal bold 16px/24px Source Han Sans TW;
+          color: #fff;
+          background-color:$main-color;
+          &:hover{
+            background-color:$primary-color;
+            cursor: pointer;
+          }
+          @include iphone{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  
+}
+.footer{
+  padding: 48px 0 32px;
+  background: $main-color;
+  @include iphone{
+    padding: 24px 0 16px;
+  }
+  .footerContent{
+    @include content-style;
+    
+    .footerTop{
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #fff;
+      .menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        @include ipad{
+          width: 100%;
+        }
+        @include iphone{
+          display: none;
+        }
+        a{
+          font: normal normal normal 16px/24px Source Han Sans TW;
+          color:#fff;
+        }
+      }
+      .footerMedium{
+        padding-bottom: 32px;
+        @include iphone{
+          padding-bottom: 24px;
+        }
+        a{
+          font: normal normal normal 36px/54px Source Han Sans TW;
+          color:#fff;
+          margin-top: 16px;
+          @include iphone{
+            margin: 0;
+          }
+          i{
+            width: 36px;
+            margin-right: 22px;
+            @include iphone{
+              width: 24px;
+              margin-right: 11px;
+            }
+          }
+          @include iphone{
+              font: normal normal normal 16px/24px Source Han Sans TW;
+          }
+        }
+      }
+      .media{
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        @include ipad{
+          width: 35%;
+        }
+        @include iphone{
+          width: 30%;
+        }
+        img{
+          width: 48px;
+          height: 48px;
+          @include iphone{
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+    
+    .footerbottom{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      p{
+        font: normal normal normal 16px/24px Roboto;
+        color:#fff;
+        @include iphone{
+          width: 100%;
+          margin-bottom: 8px;
+        }
+      }
+      .provicy{
+        width: 15%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include ipad{
+          width: 20%;
+        }
+        @include iphone{
+          width: 40%;
+        }
+        a{
+          font: normal normal normal 14px/21px Source Han Sans TW;
+          color:#fff;
+          @include iphone{
+            width: 100%;
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+}
