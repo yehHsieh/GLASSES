@@ -127,7 +127,8 @@ a {
   right: 0;
   -webkit-transition: max-height 2s;
   -o-transition: max-height 2s;
-  transition: max-height 2s; }
+  transition: max-height 2s;
+  z-index: 9; }
   .dropMenu a {
     padding: 3% 0;
     color: #fff;
