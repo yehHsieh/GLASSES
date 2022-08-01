@@ -140,6 +140,7 @@ a {
   left: 0;
   right: 0;
   transition: max-height 2s;
+  z-index: 9;
 }
 .dropMenu a {
   padding: 3% 0;
