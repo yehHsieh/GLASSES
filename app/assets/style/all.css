@@ -52,6 +52,11 @@ table {
   box-sizing: border-box;
 }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -69,7 +74,7 @@ a {
   position: relative;
 }
 .header .headerContent {
-  max-width: 90%;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 0 12px;
   display: flex;
@@ -78,12 +83,12 @@ a {
 }
 @media (max-width: 992px) {
   .header .headerContent {
-    padding: 0 36px;
+    max-width: 698px;
   }
 }
 @media (max-width: 767px) {
   .header .headerContent {
-    padding: 0 15px;
+    max-width: 90%;
   }
 }
 .header .headerContent h1 > a {
@@ -106,19 +111,16 @@ a {
     display: none;
   }
 }
-.header .headerContent .nav > li {
-  width: 20%;
-}
 .header .headerContent .nav a {
   color: #fff;
   font: normal normal normal 20px/30px Source Han Sans TW;
-  padding: 5%;
+  padding: 5% 0;
 }
 
 .hamburger {
   display: none;
   position: absolute;
-  top: 3%;
+  top: 25px;
   right: 5%;
   font-size: 40px;
   color: #fff;
@@ -165,18 +167,18 @@ a {
   }
 }
 .footer .footerContent {
-  max-width: 90%;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 0 12px;
 }
 @media (max-width: 992px) {
   .footer .footerContent {
-    padding: 0 36px;
+    max-width: 698px;
   }
 }
 @media (max-width: 767px) {
   .footer .footerContent {
-    padding: 0 15px;
+    max-width: 90%;
   }
 }
 .footer .footerContent .footerTop {
@@ -309,11 +311,6 @@ a {
   height: 787px;
   background: url(../images/week3-4/home-header.png);
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: end;
-  position: relative;
 }
 @media (max-width: 767px) {
   .banner {
@@ -322,11 +319,9 @@ a {
   }
 }
 .banner .bannerContent {
-  max-width: 90%;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 0 12px;
-  position: absolute;
-  right: 5%;
   text-align: right;
   display: flex;
   flex-direction: column;
@@ -334,18 +329,16 @@ a {
 }
 @media (max-width: 992px) {
   .banner .bannerContent {
-    padding: 0 36px;
+    max-width: 698px;
   }
 }
 @media (max-width: 767px) {
   .banner .bannerContent {
-    padding: 0 15px;
+    max-width: 90%;
   }
 }
 @media (max-width: 992px) {
   .banner .bannerContent {
-    width: 100%;
-    padding: 0;
     margin-right: 37px;
   }
 }
@@ -354,6 +347,7 @@ a {
     width: 100%;
     margin: 0 auto;
     padding: 0 12px;
+    margin-right: 5%;
   }
 }
 .banner .bannerContent h2 {
@@ -413,7 +407,7 @@ a {
   }
 }
 .special .specialContent, .special .customerContent, .series .specialContent, .series .customerContent, .coordinate .specialContent, .coordinate .customerContent, .customer .specialContent, .customer .customerContent {
-  max-width: 90%;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 0 12px;
   display: flex;
@@ -422,12 +416,12 @@ a {
 }
 @media (max-width: 992px) {
   .special .specialContent, .special .customerContent, .series .specialContent, .series .customerContent, .coordinate .specialContent, .coordinate .customerContent, .customer .specialContent, .customer .customerContent {
-    padding: 0 36px;
+    max-width: 698px;
   }
 }
 @media (max-width: 767px) {
   .special .specialContent, .special .customerContent, .series .specialContent, .series .customerContent, .coordinate .specialContent, .coordinate .customerContent, .customer .specialContent, .customer .customerContent {
-    padding: 0 15px;
+    max-width: 90%;
   }
 }
 .special .specialContent .list, .special .customerContent .list, .series .specialContent .list, .series .customerContent .list, .coordinate .specialContent .list, .coordinate .customerContent .list, .customer .specialContent .list, .customer .customerContent .list {
@@ -471,7 +465,7 @@ a {
   margin-bottom: 48px;
 }
 .series .seriesContent {
-  max-width: 90%;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 0 12px;
   display: flex;
@@ -480,22 +474,22 @@ a {
 }
 @media (max-width: 992px) {
   .series .seriesContent {
-    padding: 0 36px;
+    max-width: 698px;
   }
 }
 @media (max-width: 767px) {
   .series .seriesContent {
-    padding: 0 15px;
+    max-width: 90%;
   }
 }
 @media (max-width: 992px) {
   .series .seriesContent {
-    width: 50%;
+    max-width: 50%;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   .series .seriesContent {
-    width: 100%;
+    max-width: 100%;
   }
 }
 .series .seriesContent li {
@@ -539,7 +533,7 @@ a {
   color: #fff;
 }
 .coordinate .coordinateContent {
-  max-width: 90%;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 0 12px;
   display: flex;
@@ -547,12 +541,12 @@ a {
 }
 @media (max-width: 992px) {
   .coordinate .coordinateContent {
-    padding: 0 36px;
+    max-width: 698px;
   }
 }
 @media (max-width: 767px) {
   .coordinate .coordinateContent {
-    padding: 0 15px;
+    max-width: 90%;
   }
 }
 .coordinate .coordinateContent li {

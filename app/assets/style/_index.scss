@@ -2,38 +2,39 @@
     height: 787px;
     background: url(../images/week3-4/home-header.png);
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
-    position: relative;
+    // display: flex; 
+    // // flex-direction: column;
+    // justify-content: end;
+    // align-items:center;
+    // position: relative;
     @include iphone{
       background: url(../images/week3-4/home-header-sm.png) no-repeat;
       background-size: cover;
     }
     .bannerContent{
-    //   max-width: 600px;
-    @include content-style;
-      // margin-right: 20%;
-        position: absolute;
-        right: 5%;
-        text-align: right;
+      // max-width: 600px;
+      @include content-style;
+      text-align:right;
+      // // margin-right: 15%;
+      // position: absolute;
+      // right: 12px;
         display: flex;
         flex-direction: column;
         align-items: end;
         @include ipad{
-            width: 100%;
+            // width: 100%;
             // margin: 0 auto;
-            padding: 0;
+            // padding: 0;
             margin-right: 37px;
         }
         @include iphone{
             width: 100%;
             margin: 0 auto;
             padding: 0 12px;
+            margin-right: 5%;
         }
         h2{
-        font: normal normal normal 36px/54px Source Han Sans TW;
+          font: normal normal normal 36px/54px Source Han Sans TW;
         color: $primary-color;
         @include iphone{
             font: normal normal normal 16px/24px Source Han Sans TW;
@@ -125,10 +126,10 @@
       justify-content: space-between;
       flex-wrap: wrap;
       @include ipad{
-        width: 50%;
+        max-width: 50%;
       }
-      @include ipad{
-        width: 100%;
+      @include iphone{
+        max-width: 100%;
       }
       li{
         width: 32%;

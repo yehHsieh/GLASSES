@@ -1,11 +1,11 @@
 @mixin content-style{
-    max-width: 90%;
+    max-width: 1320px;
     margin: 0 auto;
     padding: 0 12px;
     @include ipad{
-    padding: 0 36px;
+    max-width: 698px;
     }
     @include iphone{
-        padding: 0 15px;
+    max-width: 90%;
         }
 }
