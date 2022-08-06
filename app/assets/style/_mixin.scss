@@ -9,3 +9,16 @@
     max-width: 90%;
         }
 }
+
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+    @include ipad{
+    max-width: 698px;
+    }
+    @include iphone{
+    max-width: 372px;
+        }
+}

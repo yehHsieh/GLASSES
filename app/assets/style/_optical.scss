@@ -1,0 +1,134 @@
+.topNav{
+    @include content-style;
+    display: flex;
+    text-align: center;
+    @include ipad{
+        max-width: 100%;
+        padding: 0;
+    }
+    @include iphone{
+        max-width: 100%;
+        padding: 0;
+    }
+    .optical{
+        border-bottom: 8px solid $main-color;
+    }
+    li{
+        width: 33.33%;
+        padding: $space*6 0;
+        font-size: 32px;
+        font-weight: 500;
+        @include ipad{
+            padding: $space*4 0;
+            font-size: 24px;
+        }
+        @include iphone{
+            padding: $space*4 0;
+            font-size: 16px;
+        }
+        a{
+            display: block;
+            color: #000;
+        } 
+    }
+}
+
+.opticalBanner{
+    display: flex;
+}
+
+.opticalMain{
+    text-align: center;
+    margin: $space*20 0;
+    @include iphone{
+        margin: $space*10 0 $space*16;
+    }
+    h2{
+        font-size: 42px;
+        font-weight: 500;
+    }
+    h3{
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .product{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 32px;
+        @include iphone{
+            margin: 24px 0 40px;
+        }
+        li{
+            width: 23%;
+            margin-bottom: 80px;
+            @include ipad{
+                width: 48%;
+                margin-bottom: 40px;
+            }
+            @include iphone{
+                width: 100%;
+                margin-bottom: 24px;
+            }
+        }
+        .namePrice{
+            display: flex;
+            justify-content: space-between;
+        }
+        h4{
+            font-size: 24px;
+            font-weight: 400;
+        }
+        p{
+            font-size: 24px;
+            font-weight: 500;
+            color: $main-color;
+        }
+        .color{
+            display: flex;
+            .color1{
+                width: 24px;
+                height: 24px;
+                margin-right: 8px;
+                border-radius: 4px;
+                background-color:$choose1;
+            }
+            .color2{
+                width: 24px;
+                height: 24px;
+                border-radius: 4px;
+                background-color:$choose2;
+            }
+        }
+    }
+    .page{
+        display: flex;
+        justify-content: center;
+        .next{
+            padding: 11px 12px;
+            font-size: 19px;
+            color: #555555;
+            border: 1px solid #555555;
+            &:hover{
+                background-color: #000;
+                color: #fff;
+            }
+            @include iphone{
+                font-size: 16px;
+            }
+        }
+        .number{
+            padding: 12px 15px;
+            font-size: 18px;
+            color: #555555;
+            border: 1px solid #555555;
+            &:hover{
+                background-color: #000;
+                color: #fff;
+            }
+            @include iphone{
+                font-size: 16px;
+            }
+        }
+    }
+}
