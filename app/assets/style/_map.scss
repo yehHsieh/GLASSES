@@ -1,0 +1,117 @@
+.mapMain{
+    margin: $space*24 0 $space*20;
+    @include ipad{
+        margin: $space*20 0 $space*14;
+    }
+    @include iphone{
+        margin: $space*10 0 ;
+    }
+    h2{
+        font-size: 48px;
+        font-weight: 700;
+        padding-left: $space*4;
+        margin-bottom: $space*8;
+        border-left: 8px solid #9F1213;
+        @include iphone{
+            font-size: 24px;
+            margin-bottom: $space*6;
+        }
+    }
+    label{
+        font-size: 24px;
+        margin-right: $space*4;
+        @include iphone{
+            font-size: 16px;
+            margin-right: $space*2;
+        }
+    }
+    select{
+        padding: 6px 230px 6px 12px;
+        margin-bottom: $space*10;
+        font-size: 18px;
+        border: 1px solid #CED4DA;
+        @include iphone{
+            padding: 6px 180px 6px 12px;
+            margin-bottom: $space*6;
+        }
+    }
+    .map{
+        display: flex;
+        flex-wrap: wrap;
+        margin:0 $space*(-3);
+        .shopImf{
+            width: 41.66%;
+            padding: 0 $space*3;
+            color: #212529;
+            @include ipad{
+                width: 100%;
+                margin-bottom: $space*6;
+            }
+        }
+        
+        .shopMap{
+            width: 58.33%;
+            padding: 0 $space*3;
+            @include ipad{
+                width: 100%;
+                margin-bottom: $space*6;
+            }
+            img{
+                height: 414px;
+                @include iphone{
+                    height: 208px;
+                }
+            }
+        }
+
+        h3{
+            font-size: 24px;
+            padding: $space*2 0 $space*2 $space*6;
+            border: 1px solid #00000020;
+        }
+
+        .ipadContent{
+            @include ipad{
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 $space*(-3);
+            }
+            @include iphone{
+                flex-direction: column;
+            }
+            img{
+                @include ipad{
+                    width: 50%;
+                    padding: 0 $space*3;
+                }
+                @include iphone{
+                    width: 100%;
+                } 
+            }
+            .ipadRwd{
+                @include ipad{
+                    width: 50%;
+                    padding: 0 $space*3;
+                }
+                @include iphone{
+                    width: 100%;
+                }  
+            }
+        }
+    }
+    .shopContact{
+        padding: $space*4 $space*6 $space*4;
+        border: 1px solid #00000020;
+        li{
+            font-size: 20px;
+            margin-bottom: $space*2;
+        }
+        i{
+            width: 24px;
+            height: 24px;
+            font-size: 24px;
+            text-align: center;
+            margin-right: $space*2;
+        }
+    }
+}
