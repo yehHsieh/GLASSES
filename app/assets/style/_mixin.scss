@@ -10,6 +10,58 @@
         }
 }
 
+@mixin head-style{
+    margin: $space*24 0 $space*20;
+    @include ipad{
+        margin: $space*20 0 $space*14;
+    }
+    @include iphone{
+        margin: $space*10 0 $space*16;
+    }
+    h2{
+        font-size: 48px;
+        font-weight: 700;
+        padding-left: $space*4;
+        margin-bottom: $space*8;
+        border-left: 8px solid #9F1213;
+        @include iphone{
+            font-size: 24px;
+            margin-bottom: $space*6;
+        }
+    }
+}
+
+@mixin page-style {
+    display: flex;
+        justify-content: center;
+        .next{
+            padding: 11px 12px;
+            font-size: 19px;
+            color: #555555;
+            border: 1px solid #555555;
+            &:hover{
+                background-color: #000;
+                color: #fff;
+            }
+            @include iphone{
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+        .number{
+            padding: 12px 15px;
+            font-size: 18px;
+            color: #555555;
+            border: 1px solid #555555;
+            &:hover{
+                background-color: #000;
+                color: #fff;
+            }
+            @include iphone{
+                font-size: 16px;
+            }
+        }
+}
 
 .container{
     max-width: 1320px;

@@ -1225,6 +1225,125 @@ a {
   margin-right: 8px;
 }
 
+.questionMain {
+  width: 66.66%;
+  margin: 96px 0 80px;
+}
+@media (max-width: 992px) {
+  .questionMain {
+    margin: 80px 0 56px;
+  }
+}
+@media (max-width: 767px) {
+  .questionMain {
+    margin: 40px 0 64px;
+  }
+}
+.questionMain h2 {
+  font-size: 48px;
+  font-weight: 700;
+  padding-left: 16px;
+  margin-bottom: 32px;
+  border-left: 8px solid #9F1213;
+}
+@media (max-width: 767px) {
+  .questionMain h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+.questionMain h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+@media (max-width: 767px) {
+  .questionMain h3 {
+    font-size: 16px;
+    margin-right: 8px;
+  }
+}
+.questionMain .questions h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.questionMain .questions p {
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.blogMain {
+  margin: 96px 0 80px;
+}
+@media (max-width: 992px) {
+  .blogMain {
+    margin: 80px 0 56px;
+  }
+}
+@media (max-width: 767px) {
+  .blogMain {
+    margin: 40px 0 64px;
+  }
+}
+.blogMain h2 {
+  font-size: 48px;
+  font-weight: 700;
+  padding-left: 16px;
+  margin-bottom: 32px;
+  border-left: 8px solid #9F1213;
+}
+@media (max-width: 767px) {
+  .blogMain h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.project > li {
+  display: flex;
+  margin: 0 -12px;
+}
+.project > li img {
+  width: 50%;
+  padding: 0 12px;
+}
+.project > li .read {
+  width: 50%;
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+}
+.project > li h3 {
+  font-size: 32px;
+  color: #AA0601;
+}
+.project > li p {
+  font-size: 20px;
+  margin-bottom: 102px;
+}
+.project > li a {
+  font-size: 36px;
+  text-align: right;
+  font-weight: 900;
+  color: #AA0601;
+  align-self: flex-end;
+}
+.project .s-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.project .s-title h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.project .s-title p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
 * {
   outline: 1px solid black;
 }/*# sourceMappingURL=all.css.map */
