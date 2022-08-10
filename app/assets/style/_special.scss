@@ -1,0 +1,185 @@
+.blogMenu{
+    background-color: $primary-color;
+    @include iphone{
+        display: none;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i{
+            font-size: 30px;
+            color: #fff;
+        }
+    }
+    .blogNav{
+        display: flex;
+        margin: 0 $space*(-6);
+        a{
+            font-size: 20px;
+            font-weight: 700;
+            padding: $space*3 $space*6;
+            color:#fff;
+        }
+    }
+}
+.bread{
+    margin: $space*6 0 $space*2;
+    @include ipad{
+        margin-top: $space*2;
+    }
+    @include iphone{
+        margin-top: $space*4;
+    }
+    span{
+        color:$main-color;
+    }
+}
+.hash{
+    display: flex;
+    li{
+        margin-right: 15px;
+        font-size: 24px;
+        font-weight: 700;
+        color: $main-color;
+        @include iphone{
+            font-size: 16px;
+        }
+    }
+}
+.specialContainer{
+    display: flex;
+    margin: 0 $space*(-3);
+}
+.specialMain{
+@include head-style;
+width: 66.66%;
+padding: 0 $space*3;
+margin-top: $space*2;;
+margin-bottom: $space*20;
+@include ipad{
+    width: 75%;
+    margin-top: $space*2;
+    margin-bottom: $space*20;
+}
+@include iphone{
+    width: 100%;
+    margin-bottom: $space*12;
+}
+h2{
+    margin-bottom: 0;
+    padding-left: 0;
+    border-left: 0;
+    @include iphone{
+        font-weight: 400;
+    }
+}
+h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: $space*4;
+    @include ipad{
+        margin-bottom: $space*6; 
+    }
+    @include iphone{
+        font-size: 16px;
+        margin-bottom: $space*4;
+    }
+}
+}
+.specialPart{
+    color: #555555;
+    p{
+        margin:$space*2 0 $space*10;
+        @include ipad{
+            margin:$space*4 0 $space*6;
+        }
+        @include iphone{
+            margin:$space*2 0 $space*4;
+        }
+    }
+}
+.share{
+    display: flex;
+    padding-bottom: $space*4;
+    margin-bottom: $space*6;
+    border-bottom: 1px solid #707070;
+    @include ipad{
+        margin-top: $space*4;
+    }
+    @include iphone{
+        display: none;
+    }
+    h4, li{
+        font-weight: 500;
+        margin-right: $space*4;
+    }
+    img{
+        width: 24px;
+        height: 24px;
+    }
+}
+.specialPage{
+    display: flex;
+    justify-content: space-between;
+    @include iphone{
+        display: none;
+    }
+    a{
+        color:#000;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+    .pre{
+        display: flex;
+        span{
+            margin-right: $space*3;
+        }
+    }
+    .next{
+        display: flex;
+        p{
+            margin-right: $space*3;
+        }
+    }
+}
+.tag{
+    width: 23%;
+    padding: 0 $space*3;
+    margin-top: $space*2;
+    @include iphone{
+        display: none;
+    }
+    h3, span{
+        font-size: 32px;
+        font-weight: 700;
+        color: $main-color;
+        margin-bottom: $space;
+        @include ipad{
+            font-size: 16px;
+        }
+    }
+    span{
+        margin-right: $space*3;
+        vertical-align: middle;
+    }
+}
+.hashTag{
+    display: flex;
+    flex-wrap: wrap;
+    li{
+        margin:0 $space*6 $space 0;
+        @include ipad{
+            margin-right: $space*4;
+        }
+    }
+    a{
+        font-size: 24px;
+        font-weight: 700;
+        color: $main-color;
+        @include ipad{
+            font-size: 16px;
+        }
+    }
+}
