@@ -6,7 +6,9 @@ $(document).ready(function(){
 
   // $('.topNav li').click(function (e) { 
   //   e.preventDefault();
-  //   $(this).toggleClass('navBottom');
-  //   $(this).parent().siblings().find('li').removeClass('navBottom');
+    
+  //   $(this).addClass('navBottom').siblings().removeClass('navBottom');
+    
   // });
+
 });

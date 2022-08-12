@@ -17,6 +17,10 @@
         width: 33.33%;
         font-size: 32px;
         font-weight: 500;
+        border-right: 1px solid #DCDCDC;
+        &:first-child{
+            border-left: 1px solid #DCDCDC;
+        }
         @include ipad{
             padding: $space*4 0;
             font-size: 24px;
@@ -29,6 +33,10 @@
             display: block;
             padding: $space*6 0;
             color: #000;
+            z-index: 5;
+            &:hover{
+                border-bottom: 8px solid $main-color;
+            }
         } 
     }
 }
